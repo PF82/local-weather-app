@@ -1,0 +1,35 @@
+// media queries / breakpoints 
+
+@include mq(320px, 480px) {
+    main {
+        width: 280px;
+        padding: 15px;
+        font-size: $fs-16;
+    }
+
+    .box img {
+        height: 120px;
+    }
+}
+
+@include mqmaxh(721px) {
+    main {
+        width: 280px;
+        height: auto;
+        color: $black;
+        font-size: $fs-12;
+    }
+
+    #msg,
+    #unit {
+        font-size: $fs-10;
+    }
+
+    h1 {
+        font-size: $fs-12;
+    }
+
+    .box img {
+        height: 140px;
+    }
+}

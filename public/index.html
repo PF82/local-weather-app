@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local Weather App</title>
+  <link rel="stylesheet" href="../src/css/main.min.css">
+</head>
+
+<body id="background-image">
+
+  <main>
+    <figure id="container" class="box box1">
+      <img id="image" src="../public/img/day-2.jpg" alt="">
+      <p id="msg">WELCOME</p>
+      <button id="unit" type="button">Imperial Units</button>
+    </figure>
+
+    <header>
+      <h1 id="heading">LOCAL WEATHER</h1>
+    </header>
+
+    <section id="weather-data">
+      <div id="map-icon">
+        <i id="icon" class="fas fa-map-marker-alt" style='font-size:25px;color:red'></i>
+      </div>
+      <div id="location_country_date-time">
+        <div id="location_country">
+          <span id="location">London </span>
+          <sup id="country" style="font-size: 12px;">UK</sup>
+        </div>
+        <p id="date-time">Fri 16 Sepetember 16:01</p>
+      </div>
+
+      <div id="weather-icon_temperature">
+        <div class="weather_icon">
+          <img id="weather_icon" src="http://openweathermap.org/img/wn/10d@2x.png" alt="Weather icon">
+        </div>
+        <div class="temp">
+          <p id="temp" style="font-size: 50px;">22&#176</p>
+        </div>
+      </div>
+
+      <div id="mix-temp_max-temp_feels-like">
+        <p class="box box2" id="temp_max">24&#176;</p>
+        <p class="box box3" id="temp_min">&nbsp/ 15&#176;</p>
+        <p class="box box4" id="feels_like">&nbsp| FeelsLike 27&#176;</p>
+      </div>
+
+      <p id="descr">Mostly sunny</p>
+
+      <table id="other-weather-data-items">
+        <tr>
+          <td class="sunrise">Sunrise</td>
+          <td id="sunrise">06:20</td>
+        </tr>
+        <tr>
+          <td class="sunset">Sunset</td>
+          <td id="sunset">19:50</td>
+        </tr>
+        <tr>
+          <td class="humidity">Humidity</td>
+          <td id="humidity">48 %</td>
+        </tr>
+        <tr>
+          <td class="visibility">Visibility</td>
+          <td id="visibility">Fog</td>
+        </tr>
+        <tr>
+          <td class="wind-speed">Wind speed</td>
+          <td id="wind-speed">6.2 km/h</td>
+        </tr>
+        <tr>
+          <td class="wind-deg">Wind direction</td>
+          <td id="wind-deg">45&#176 NE Wind</td>
+          <td id="space"></td>
+        </tr>
+        <tr>
+          <td class="wind-gust">Wind gust</td>
+          <td id="wind-gust">15 km/h</td>
+        </tr>
+      </table>
+    </section>
+  </main>
+
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://kit.fontawesome.com/1fc2587666.js" crossorigin="anonymous"></script>
+  <script src="https://momentjs.com/downloads/moment.js"></script> 
+  <script type="module" src="../src/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+// reset styles
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Source+Sans+Pro', sans-serif, "Times New Roman";
+    font-size: $fs-18;
+    color: $white;
+    border: $b-off;
+}
